@@ -1,0 +1,23 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+body{font-size: 22px;line-height: 23px;font-family: arial;}
+#wrapper{width: 960px;margin: 30px auto;}
+#wp-list-thumb{margin-top: 30px;}
+#show{margin-bottom: 10px;}
+#wp-list-thumb #show{width: 350px; height: 350px;}
+#wp-list-thumb #show img{width: 100%; overflow: hidden;}
+#wp-list-thumb ul#list-thumb li{float: left; margin-right: 10px;}
+#wp-list-thumb ul#list-thumb li:last-child{margin-right: 0px;}
+.active{border: 1px solid #111;}
